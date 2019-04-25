@@ -4,6 +4,10 @@ import psutil,json
 
 app = Flask(__name__)
 
+@app.route("/version")
+def index():
+        return "version 0.0.1"
+
 @app.route("/cpu")
 def cpu():
         cpu = json_string = json.dumps(psutil.cpu_stats())
