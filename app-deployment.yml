@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app-demo
-        image: regge.azurecr.io/app-demo:latest
+        image: rejestr11.azurecr.io/app-demo:latest
         ports:
         - containerPort: 4000
       imagePullSecrets:
